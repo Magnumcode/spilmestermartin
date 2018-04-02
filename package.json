@@ -1,8 +1,8 @@
 {
-  "name": "Test",
-  "description": "Test",
-  "version": "0.0.0",
-  "main": "kode.js",
+  "name": "spilmestermartin",
+  "description": "klodens bedste rollespiller",
+  "version": "0.1.0",
+  "main": "spilmester.js",
   "scripts": {
     "start": "kode.js"
   },
