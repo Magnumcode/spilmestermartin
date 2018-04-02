@@ -7,7 +7,7 @@
 //client.registry.registerDefaults();
 //client.registry.registerCommandsIn(__dirname + "/commands");
 
-const Discord = require('discord.js');
+const Discord = require('discord.js-commando');
 const client = new Discord.Client();
 
 client.on('ready', () => {
