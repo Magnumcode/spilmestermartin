@@ -1,7 +1,5 @@
 const discord = require("discord.js");
-const client = new Discord.Client({
-    owner: '308479121489657857'
-});
+const client = new Discord.Client();
 
 client.on("ready", () => {
   console.log("er i klar!!!");
