@@ -7,4 +7,4 @@ client.registry.registerGroup("spille", "Spille");
 client.registry.registerDefaults();
 client.registry.registerCommandsIn(__dirname + "/commands");
 
-client.login("process.env.BOT_TOKEN");
+client.login(process.env.BOT_TOKEN);
