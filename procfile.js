@@ -1,1 +1,1 @@
-worker: node kode.js
+worker: node spilmester.js
