@@ -1,10 +1,13 @@
 {
-  "name": "Spilmester",
-  "description": "discord bot",
-  "version": "0.1.0",
-  "main": "spilmester.js",
+  "name": "Test",
+  "description": "Test",
+  "version": "0.0.0",
+  "main": "kode.js",
   "scripts": {
-    "start": "node spilmester.js"
+    "start": "kode.js"
   },
-  "dependencies": {"discord.js": "11.1.0"}
+  "dependencies": {
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
+  }
 }
