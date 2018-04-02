@@ -1,10 +1,21 @@
-const commando = require("discord.js-commando");
-const client = new commando.Client({
+const discord = require("discord.js");
+const client = new Discord.Client({
     owner: '308479121489657857'
 });
 
-client.registry.registerGroup("spille", "Spille");
-client.registry.registerDefaults();
-client.registry.registerCommandsIn(__dirname + "/commands");
+client.on("ready", () => {
+  console.log("er i klar!!!");
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!historie")) {
+    message.channel.send("Jeg er under om programering aldrig brug commando til discord.js");
+  } else
+  
+  if (message.content.startsWith("!comp")) {
+      message.channel.send("Jeg er under om programering aldrig brug commando til discord.js");
+  }
+  
+});
 
 client.login(process.env.BOT_TOKEN);
