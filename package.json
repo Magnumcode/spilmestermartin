@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "main": "spilmester.js",
   "scripts": {
-    "start": "spilmester.js"
+    "start": "node spilmester.js"
   },
   "dependencies": {
     "discord.js": "11.1.0",
