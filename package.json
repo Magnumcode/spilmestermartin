@@ -1,0 +1,12 @@
+{
+  "name": "Spilmester",
+  "description": "discord bot",
+  "version": "0.1.0",
+  "main": "spilmester.js",
+  "scripts": {
+    "start": "node spilmester.js"
+  },
+  "dependencies": {
+    "discord.js": "11.1.0",
+  }
+}
