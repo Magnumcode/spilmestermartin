@@ -8,6 +8,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!historie') {
+        historie = Math.floor(Math.random() * 3) + 1;
     	message.reply(historie);
   	}
 });
