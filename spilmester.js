@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const collector1 = 0;
 var flip = 0;
 var historie = Math.floor(Math.random() * 3) + 1;
 
@@ -58,7 +57,7 @@ client.on("message", message => {
    
    //simpel hjælp kommando
    if (message.content == "!hjælp") {
-       message.reply("!historie: skriver en tilfældig historie \n !comp spørger alle om de vil spille en comp")
+       message.reply("!historie: skriver en tilfældig historie !comp spørger alle om de vil spille en comp")
    }
    
    //plat eller krone kommando. Hvis flip er = 1 er det plat og hvis flip er = 2 er det krone
@@ -71,11 +70,11 @@ client.on("message", message => {
                 message.channel.send("tillykke, det blev plat du vandt");
 	    }	    
 	    if (message.content == "plat" and flip == 2) {
-	        message.channel.send("desvære du tabte");
+	        message.channel.send("desvære du tabte det blev krone");
 	    }
 	       
             if (message.content == "krone" and flip == 1) {
-                message.channel.send("sorry du tabte det blev krone");
+                message.channel.send("sorry du tabte det blev plat");
             }
 	    
 	    if (message.content == "krone" and flip == 2) {
