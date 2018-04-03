@@ -6,7 +6,7 @@ client.on("ready", () => {
     console.log("klar min gut");
 });
 
-client.on("message", message, 'guildMemberAdd', member => {
+client.on("message", message => {
    
     //sender en tilfældig historie
     if (message.content == "!historie") {
