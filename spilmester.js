@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!historie') {
-    	message.reply('Under omprogramering');
+    	message.reply(historie);
   	}
 });
 
