@@ -41,17 +41,22 @@ client.on("message", message => {
    if (message.content == "!comp") {
        historie = Math.floor(Math.random() * 3) + 1;            
        
-        if (historie == 1) {
-		message.channel.send("@everyone nogen trolde eller elvere der vil tage en comp?");
+       if (historie == 1) {
+	   message.channel.send("@everyone nogen trolde eller elvere der vil tage en comp?");
 		}
 
-		if (historie == 2) {
-		message.channel.send("@everyone nogen barda nørder der er klar til en comp?");
+	if (historie == 2) {
+	    message.channel.send("@everyone nogen barda nørder der er klar til en comp?");
 		}
 
-		if (historie == 3) {
-		message.channel.send("@everyone er der nogle friske fyre på linjen der kunne tage en comp?");
+	if (historie == 3) {
+	    message.channel.send("@everyone er der nogle friske fyre på linjen der kunne tage en comp?");
 		}
+   }
+   
+   if (message.content == "!hjælp") {
+       message.reply("!historie: skriver en tilfældig historie")
+       message.channel.send("!comp: spørger hele serveren om der er nogle der vil spille")	
    }
 });
 
