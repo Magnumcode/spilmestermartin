@@ -1,5 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const collector1 = 0;
+var flip = 0;
 var historie = Math.floor(Math.random() * 3) + 1;
 
 client.on("ready", () => {
@@ -39,7 +41,7 @@ client.on("message", message => {
    
    //sender en besked til hele serveren og spørger om der er nogen der vil spille comp med en tilfældig besked
    if (message.content == "!comp") {
-       historie = Math.floor(Math.random() * 3) + 1;            
+       		historie = Math.floor(Math.random() * 3) + 1;            
        
        if (historie == 1) {
 	   message.channel.send("@everyone nogen trolde eller elvere der vil tage en comp?");
@@ -54,10 +56,34 @@ client.on("message", message => {
 		}
    }
    
+   //simpel hjælp kommando
    if (message.content == "!hjælp") {
-       message.reply("!historie: skriver en tilfældig historie")
-       message.channel.send("!comp: spørger hele serveren om der er nogle der vil spille")	
+       message.reply("!historie: skriver en tilfældig historie \n !comp spørger alle om de vil spille en comp")
    }
+   
+   //plat eller krone kommando. Hvis flip er = 1 er det plat og hvis flip er = 2 er det krone
+   if (message.content == "!flip")
+       message.reply("Plat eller krone");
+       flip = Math.floor(Math.random() * 2) + 1);
+       const collector1 = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
+       collector.on('collect', message => {
+            if (message.content == "plat" and flip == 1) {
+                message.channel.send("tillykke, det blev plat du vandt");
+	    }	    
+	    if (message.content == "plat" and flip == 2) {
+	        message.channel.send("desvære du tabte");
+	    }
+	       
+            if (message.content == "krone" and flip == 1) {
+                message.channel.send("sorry du tabte det blev krone");
+            }
+	    
+	    if (message.content == "krone" and flip == 2) {
+	    	message.channel.send("du vinder! Det blev krone");
+	    }
+        });
+	   
+	
 });
 
 client.login(process.env.BOT_TOKEN);
