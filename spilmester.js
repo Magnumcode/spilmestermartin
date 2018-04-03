@@ -9,7 +9,7 @@ client.on("ready", () => {
 client.on("message", message => {
    
     //sender en tilfældig historie
-    if (message.content === "!historie") {
+    if (message.content == "!historie") {
         historie = Math.floor(Math.random() * 6) + 1;
         
     	if (historie == 1) {
@@ -36,6 +36,23 @@ client.on("message", message => {
             message.channel.send("@everyone Du skal spille en comp. Du er i en lobby med Nicolas A (den sindssyge glock-18 spiller som løber i midten af alting) og Lukas (ham der købte buttplugs for 70 €). Lukas har lavet lobbyen og vil gerne have dust 2 på. Du gider ikke at have dust 2 på fordi du har en speedygon dell som ikke kan trække dust 2. Lukas siger at han har fjernet Dust 2 og har sat Mirage på. Du accepterer kampen men finder ud af at det bliver Dust 2. Vil du vælge at leave kampen eller råbe \"Din fede autist! Dø i et hul!\" til Lukas?");
         }
   	}
+   
+   //sender en besked til hele serveren og spørger om der er nogen der vil spille comp 
+   if (message.content == "!comp") {
+       historie = Math.floor(Math.random() * 3) + 1;            
+       
+        if (historie == 1) {
+		message.channel.send("@everyone nogen trolde eller elvere der vil tage en comp?");
+		}
+
+		if (historie == 2) {
+		message.channel.send("@everyone nogen barda nørder der er klar til en comp?");
+		}
+
+		if (historie == 3) {
+		message.channel.send("@everyone er der nogle friske fyre på linjen der kunne tage en comp?");
+		}
+   }
 });
 
 //husk ik at lægge client koden ud på github
