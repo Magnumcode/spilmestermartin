@@ -6,7 +6,7 @@ client.on("ready", () => {
     console.log("klar min gut");
 });
 
-client.on("message", message => {
+client.on("message", message, 'guildMemberAdd', member => {
    
     //sender en tilfældig historie
     if (message.content == "!historie") {
@@ -37,7 +37,7 @@ client.on("message", message => {
         }
   	}
    
-   //sender en besked til hele serveren og spørger om der er nogen der vil spille comp 
+   //sender en besked til hele serveren og spørger om der er nogen der vil spille comp med en tilfældig besked
    if (message.content == "!comp") {
        historie = Math.floor(Math.random() * 3) + 1;            
        
@@ -55,5 +55,4 @@ client.on("message", message => {
    }
 });
 
-//husk ik at lægge client koden ud på github
 client.login(process.env.BOT_TOKEN);
