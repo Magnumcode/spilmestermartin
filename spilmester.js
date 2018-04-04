@@ -39,7 +39,7 @@ client.on("message", message => {
         }
 
 	    if (historie == 7) {
-	    	message.channel.send("@everyone Ny historie til spilmester: det er klokken 7 om morgenen. Du har lige været til Lan hos Asbjørn til kl 2 om natten. Du vågner ved at Asbjørn skriver om nogen spille morgen comp. Du har ikke andet at lave så du ville selvfølgelig gerne. Asbjørn vælger agency og nuke som maps. Det har du ikke sagt ja til men han starter alligevel. Når du er logget ind på serveren hører du en lille russer dreng der råber BLYAT. måske den samme russer unge som du spillede med i går. Du køber negev og starter et global elite spray. Lige pludselig ser du den lille russer knægt hoppe ind foran skærmen. det næste du ser er et skilt hvor der står: 6 days 23 hours 59 minutes.");
+	    	message.channel.send("@everyone det er klokken 7 om morgenen. Du har lige været til Lan hos Asbjørn til kl 2 om natten. Du vågner ved at Asbjørn skriver om nogen spille morgen comp. Du har ikke andet at lave så du ville selvfølgelig gerne. Asbjørn vælger agency og nuke som maps. Det har du ikke sagt ja til men han starter alligevel. Når du er logget ind på serveren hører du en lille russer dreng der råber BLYAT. måske den samme russer unge som du spillede med i går. Du køber negev og starter et global elite spray. Lige pludselig ser du den lille russer knægt hoppe ind foran skærmen. det næste du ser er et skilt hvor der står: 6 days 23 hours 59 minutes.");
 		}
 		
 		if (historie == 8) {
