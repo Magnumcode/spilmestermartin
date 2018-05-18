@@ -67,6 +67,10 @@ client.on("message", message => {
 	    message.channel.send("@everyone er der nogle friske fyre på linjen der kunne tage en comp?");
 		}
    }
+
+   if (message.content == "!modded") {
+	message.channel.send("nogle anvifox nørder der er klar på noget modded");
+   }
    
    //simpel hjælp kommando
    if (message.content == "!hjælp") {
