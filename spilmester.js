@@ -72,8 +72,8 @@ client.on("message", message => {
 	message.channel.send("@everyone nogle anvifox nørder der er klar på noget modded");
    }
 	
-   if (message.content == "!wing" or "!wingman") {
-	message.channel.send("test")
+   if (message.content == "!wing") {
+	message.channel.send("@everyone nogle anvifox nørder der er klar på noget modded");
    }
 	
 });
