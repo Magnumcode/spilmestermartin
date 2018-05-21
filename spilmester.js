@@ -73,7 +73,7 @@ client.on("message", message => {
    }
 	
    if (message.content == "!wing" or "!wingman") {
-	message.channel.send(message.author)
+	message.channel.send("test")
    }
 	
 });
