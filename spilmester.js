@@ -71,11 +71,10 @@ client.on("message", message => {
    if (message.content == "!modded") {
 	message.channel.send("@everyone nogle anvifox nørder der er klar på noget modded");
    }
-   
-   //simpel hjælp kommando
-   if (message.content == "!hjælp") {
-       message.reply("!historie: skriver en tilfældig historie n!comp spørger alle om de vil spille en comp")
-   }   	   	
+	
+   if (message.content == "!wing" or "!wingman") {
+	message.channel.send("@everyone en enkelt knejt der kunne tage en wingman med ", message.author())
+  	   	
 });
 
 client.login(process.env.BOT_TOKEN);
