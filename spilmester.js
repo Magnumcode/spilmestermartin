@@ -74,7 +74,8 @@ client.on("message", message => {
 	
    if (message.content == "!wing" or "!wingman") {
 	message.channel.send(message.author)
-  	   	
+   }
+	
 });
 
 client.login(process.env.BOT_TOKEN);
