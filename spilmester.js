@@ -73,7 +73,7 @@ client.on("message", message => {
    }
 	
    if (message.content == "!wing") {
-	message.channel.send(message.author.avatarURL);
+	message.channel.send(message.author);
    }
 	
 });
