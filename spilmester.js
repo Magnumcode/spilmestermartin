@@ -73,7 +73,7 @@ client.on("message", message => {
    }
 	
    if (message.content == "!wing") {
-	message.channel.send(message.user.username);
+	message.channel.send("@everyone en enkelt knejt der kunne tage en wing");
    }
 	
 });
