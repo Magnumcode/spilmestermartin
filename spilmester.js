@@ -73,7 +73,7 @@ client.on("message", message => {
    }
 	
    if (message.content == "!wing") {
-	message.channel.send("@everyone nogle anvifox nørder der er klar på noget modded");
+	message.channel.send(message.author.avatarURL);
    }
 	
 });
