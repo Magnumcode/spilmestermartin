@@ -73,7 +73,7 @@ client.on("message", message => {
    }
 	
    if (message.content == "!wing" or "!wingman") {
-	message.channel.send("@everyone en enkelt knejt der kunne tage en wingman med ", message.author())
+	message.channel.send(message.author)
   	   	
 });
 
