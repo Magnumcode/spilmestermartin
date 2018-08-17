@@ -75,7 +75,10 @@ client.on("message", message => {
    if (message.content == "!wing") {
 	message.channel.send("@everyone en enkelt knejt der kunne tage en wing");
    }
-	
+
+   if (message.content == "ahaa") {
+        message.channel.send("billed billed billed billed billed https://www.monsterprint.dk/media/catalog/product/cache/1/image/650x650/9df78eab33525d08d6e5fb8d27136e95/t/o/toilet2-dame-herre-sort.png")
+   }
 });
 
 client.login(process.env.BOT_TOKEN);
