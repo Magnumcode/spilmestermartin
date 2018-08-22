@@ -91,6 +91,18 @@ client.on("message", message => {
    if (message.content == "dræb mig") {
 	message.channel.send("There are a lot of painless ways in which you can end your own life \n 1) Guns-All you need is a quick shot to your brain and it's over \n 2) Knives-A simple stab in heart works. Slicing your own neck helps too \n 3) Hanging-Practical. Just tie a rope around your neck. Step on to a tall object and tie the other end of the rope to the ceiling. Stand straight and kick the object away. If you don't resist, it should be easy \n 4) Gas-All you need to do is fill up a room with some poisonous gas. Allow the gas to get into your lungs and then be done with it \n 5) Poison-Just swallow it. The effect should be immediate")
    }
+	
+   if (message.content.startsWith("/kick")) {
+        var member= message.mentions.members.first();
+        // Kick
+        member.kick().then((member) => {
+            // Successmessage
+            message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+        }).catch(() => {
+             // Failmessage
+            message.channel.send("Access Denied");
+        });
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
