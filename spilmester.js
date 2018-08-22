@@ -83,6 +83,10 @@ client.on("message", message => {
    if (message.content == "ok") {
 	message.channel.send("talte du til mig?")
    }
+   
+   if (message.content == "fancy") {
+	message.channel.send("https://i.ytimg.com/vi/9mVAJjdJXEo/maxresdefault.jpg")
+   {	   
 });
 
 client.login(process.env.BOT_TOKEN);
