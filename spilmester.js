@@ -93,7 +93,7 @@ client.on("message", message => {
    }
 	
    if (message.content == "!gta") {
-	message.channel.send("@everyone nogle gangsters der vil spille gta???????")
+	message.reply(" siger @everyone nogle gangsters der vil spille gta???????")
    }
 });
 
