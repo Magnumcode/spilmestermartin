@@ -56,24 +56,24 @@ client.on("message", message => {
        		historie = Math.floor(Math.random() * 3) + 1;            
        
        if (historie == 1) {
-	   message.channel.send("@everyone nogen trolde eller elvere der vil tage en comp?");
+	   message.reply(" siger @everyone nogen trolde eller elvere der vil tage en comp?");
 		}
 
 	if (historie == 2) {
-	    message.channel.send("@everyone nogen barda nørder der er klar til en comp?");
+	    message.reply(" siger @everyone nogen barda nørder der er klar til en comp?");
 		}
 
 	if (historie == 3) {
-	    message.channel.send("@everyone er der nogle friske fyre på linjen der kunne tage en comp?");
+	    message.reply(" siger @everyone er der nogle friske fyre på linjen der kunne tage en comp?");
 		}
    }
 
    if (message.content == "!modded") {
-	message.channel.send("@everyone nogle anvifox nørder der er klar på noget modded");
+	message.reply(" siger @everyone nogle anvifox nørder der er klar på noget modded");
    }
 	
    if (message.content == "!wing") {
-	message.channel.send("@everyone en enkelt knejt der kunne tage en wing");
+	message.reply(" siger @everyone en enkelt knejt der kunne tage en wing");
    }
 
    if (message.content == "ahaa") {
