@@ -95,6 +95,10 @@ client.on("message", message => {
    if (message.content == "!gta") {
 	message.reply(" siger @everyone nogle gangsters der vil spille gta????")
    }
+	
+   if (message.content == "!fortnite") {
+        message.reply(" siger @everyone nogle no-skins der vil spille Fortnite all night ????")
+   }
 });
 
 client.login(process.env.BOT_TOKEN);
