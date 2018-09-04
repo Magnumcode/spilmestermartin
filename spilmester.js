@@ -99,6 +99,42 @@ client.on("message", message => {
    if (message.content == "!fortnite") {
         message.reply("siger @everyone nogle no-skins der vil spille Fortnite all night ????")
    }
+
+   if (message.content == "!monster") {
+       		historie = Math.floor(Math.random() * 7) + 1;            
+       
+       if (historie == 1) {
+	   message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/06/30/auto/800/e03846b5b5ad91e1ee3e1a0cea19fbdc.png");
+		}
+
+	if (historie == 2) {
+	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/06/30/auto/800/21a76071c4fe9f04280201004668bd9e.png");
+		}
+
+	if (historie == 3) {
+	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2017/09/04/auto/800/0d08b8a91cc88ddf95151ef3144596e6.png");
+		}
+	   
+	if (historie == 4) {
+	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2018/05/10/auto/800/fd74cdb2bf3467cd78d1ca0a4d9ab29d.png");
+		}
+
+	if (historie == 5) {
+	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/05/30/auto/800/1fc32b903086cc0d668ab09f675fc98c.png");
+		}
+
+	if (historie == 6) {
+	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/05/30/auto/800/789a69dbf8d1cd184227a914653fae85.png");
+		}
+
+	if (historie == 7) {
+	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/05/30/auto/800/0a8b2809388ab501d7c2d2791b8dd387.png");
+		}
+	   
+	if (historie == 8) {
+	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/06/30/auto/800/132756bf620709711a9e6a02cb42ebb0.png");
+		}
+   }
 });
 
 client.login(process.env.BOT_TOKEN);
