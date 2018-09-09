@@ -104,35 +104,35 @@ client.on("message", message => {
        		historie = Math.floor(Math.random() * 7) + 1;            
        
        if (historie == 1) {
-	   message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/06/30/auto/800/e03846b5b5ad91e1ee3e1a0cea19fbdc.png");
+	   message.channel.send("https://www.bodyman.dk/images/monster-ultra-red-p.jpg");
 		}
 
 	if (historie == 2) {
-	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/06/30/auto/800/21a76071c4fe9f04280201004668bd9e.png");
+	    message.channel.send("https://www.bodyman.dk/images/monster-ultra-white-p.jpg");
 		}
 
 	if (historie == 3) {
-	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2017/09/04/auto/800/0d08b8a91cc88ddf95151ef3144596e6.png");
+	    message.channel.send("https://d31ds8iyhta7z1.cloudfront.net/img/products/1300/monster-energy-drink-3.jpg");
 		}
 	   
 	if (historie == 4) {
-	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2018/05/10/auto/800/fd74cdb2bf3467cd78d1ca0a4d9ab29d.png");
+	    message.channel.send("https://www.ocado.com/productImages/369/369024011_0_640x640.jpg?identifier=3ddbf500a81057ecf8b6b10cece97af1");
 		}
 
 	if (historie == 5) {
-	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/05/30/auto/800/1fc32b903086cc0d668ab09f675fc98c.png");
+	    message.channel.send("https://d31ds8iyhta7z1.cloudfront.net/img/products/1300/monster-energy-44-1.jpg");
 		}
 
 	if (historie == 6) {
-	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/05/30/auto/800/789a69dbf8d1cd184227a914653fae85.png");
+	    message.channel.send("https://d31ds8iyhta7z1.cloudfront.net/img/products/1300/monster-lo-carb-energy-drink-1.jpg");
 		}
 
 	if (historie == 7) {
-	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/05/30/auto/800/0a8b2809388ab501d7c2d2791b8dd387.png");
+	    message.channel.send("https://www.fakta.eu/SL/PI/887/269/02be15e1-a7e9-457d-bf90-cb4e70016886.jpg");
 		}
 	   
 	if (historie == 8) {
-	    message.channel.send("https://s3.monsterenergy.com/media/uploads_image/2016/06/30/auto/800/132756bf620709711a9e6a02cb42ebb0.png");
+	    message.channel.send("https://images-na.ssl-images-amazon.com/images/I/71Rck4FFRbL._SL1500_.jpg");
 		}
    }
 });
