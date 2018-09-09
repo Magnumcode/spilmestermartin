@@ -80,9 +80,9 @@ client.on("message", message => {
         message.channel.send("billed billed billed billed billed https://www.monsterprint.dk/media/catalog/product/cache/1/image/650x650/9df78eab33525d08d6e5fb8d27136e95/t/o/toilet2-dame-herre-sort.png")
    }
 	
-   if (message.content == "ok") {
-	message.channel.send("talte du til mig?")
-   }
+   //if (message.content == "ok") {
+	//message.channel.send("talte du til mig?")
+   //}
    
    if (message.content == "fancy") {
 	message.channel.send("https://i.ytimg.com/vi/9mVAJjdJXEo/maxresdefault.jpg")
