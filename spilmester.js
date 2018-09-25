@@ -82,7 +82,7 @@ client.on("message", message => {
 
    	
    if (message.content == "!faction") { 
-	message.reply ("siger @everyone nogle friske gutter der er klar til lidt faction");
+	message.reply("siger @everyone nogle friske gutter der er klar til lidt faction");
    }
 	
    //if (message.content == "ok") {
