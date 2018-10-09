@@ -68,6 +68,11 @@ client.on("message", message => {
 		}
    }
 
+   if (message.content == "!rankup") {
+	   message.reply("siger @everyone jeg rankede op gutter!!");
+   }
+		
+
    if (message.content == "!modded") {
 	message.reply("siger @everyone nogle anvifox nørder der er klar på noget modded");
    }
