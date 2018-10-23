@@ -146,7 +146,7 @@ client.on("message", message => {
    }
 	
    if (message.content == message.content.includes(!roll)) {
-       var roll_number = message.content.replace("!roll", "");
+       //var roll_number = message.content.replace("!roll", "");
        message.channel.send(roll_number);
    }
 });
