@@ -147,8 +147,7 @@ client.on("message", message => {
 	
    if (message.content == message.content.includes(!roll)) {
        var roll_number = message.content.replace("!roll", "");
-       historie = Math.floor(Math.random() * roll_number) + 1;
-       message.channel.send(historie);
+       message.channel.send(roll_number);
    }
 });
 
