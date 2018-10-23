@@ -144,6 +144,12 @@ client.on("message", message => {
 	    message.channel.send("https://images-na.ssl-images-amazon.com/images/I/71Rck4FFRbL._SL1500_.jpg");
 		}
    }
+	
+   if (message.content == message.content.includes(!roll)) {
+       var roll_number = input.replace("!roll");
+       historie = Math.floor(Math.random() * roll_number) + 1;
+       message.channel.send(historie);
+   }
 });
 
 client.login(process.env.BOT_TOKEN);
