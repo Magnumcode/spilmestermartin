@@ -144,6 +144,10 @@ client.on("message", message => {
 	    message.channel.send("https://images-na.ssl-images-amazon.com/images/I/71Rck4FFRbL._SL1500_.jpg");
 		}
    }
+   	
+   if (message.content == "!comp_30") {
+	message.reply("siger @everyone nogen fætre der vil spille comp om 30 minutter");
+   }
 	
    //if (message.content == message.content.includes(!roll)) {
        //var roll_number = message.content.replace("!roll", "");
